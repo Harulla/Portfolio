@@ -1,0 +1,240 @@
+:root {
+    background: #E1F8F6;
+    --main-color: #2CBFB4;
+    --text-color:#827676;
+    --pane-padding: 5px 42px;
+    --main-font:  Nunito;
+    scroll-behavior: smooth;
+}
+
+@font-face{ 
+    font-family: "Nunito";
+    src: url(font/static/Nunito-Medium.ttf)
+}
+
+@font-face{ 
+    font-family: "NunitoRegular";
+    src: url(font/static/Nunito-Regular.ttf)
+}
+
+
+
+
+
+body{
+    margin-top: 0;
+    font-family: var(--main-font)
+}
+
+.container{
+    width:100%;
+    height: auto;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.container-page{
+    height: 100vh;
+}
+
+
+.info_container{
+    padding-top: 50px;
+    position: relative;
+    margin-left: 100px;
+    padding:5px;
+    width:auto;
+    display: inline-block;
+    flex-direction: column;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+.header{
+    width:80vh;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    position:relative;
+    margin: 0 auto;
+    font-family: NunitoRegular;
+    font-size:2rem;
+    margin-bottom:2vh
+}
+
+.header a{
+    text-decoration: none;
+    color: white
+}
+
+.header a:hover{
+    text-decoration: underline;
+    color: white
+}
+
+
+.title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    padding:0;
+    justify-content: center;
+    position: relative;
+    font-size: 5rem;
+    color: var(--main-color)
+}
+
+.title:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.title::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    background: rgba(189, 230, 247, 0.788);
+}
+
+.sub-title{
+    width :50%;
+    font-size: 45px;
+    color: var(--text-color)
+}
+
+.typing-demo {
+    width: 39ch;
+    animation: typing 3s steps(39), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.80em;
+}
+  
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+    
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+.ring ul{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    padding:10px;
+} 
+.ring li {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+    margin-bottom: 20px ;
+	padding: 10px;
+	list-style: none;
+}
+ 
+.ring li:hover {
+	cursor: pointer;
+}
+ 
+.ring li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -6px;
+	top: -6px;
+	border-radius: 50%;
+	border: 6px dashed var(--main-color);
+}
+ 
+.ring li > div {
+	height: 100%;
+	background: #92ece0;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+    
+}
+ 
+@-webkit-keyframes circle{
+	0%{ transform:rotate(0deg); }
+	100%{ transform:rotate(-360deg); }
+}
+ 
+.ring li:hover:before {
+	-webkit-animation: circle 4s infinite linear;
+}
+ 
+.ring li:hover:before {
+	border-color: #7393c4;
+}
+ 
+.ring li:active:before {
+	border-color: rgb(29, 135, 143);
+}
+ 
+.ring li:hover > div {
+	background: #385d96;
+}
+ 
+.ring li:active > div {
+	background: #20978fbd;
+}
+ 
+
+@-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,20px); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,20px); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,20px); opacity: 0; }
+  }
+  
+.scroll-down-arrow {/*Animation webkit importée*/
+
+    /*Url de la flèche blanche*/
+	background-image: url(down-arrow.png);
+	background-repeat: no-repeat;/*Pour que l'image ne se répète pas vers la droite*/
+}
+
+.scroll-down-link {
+	position: absolute; /*La classe background a été mise en Position relative pour que le absolute se base par rapport à celle-ci*/
+	z-index: 100;
+	cursor:pointer; /*Changer la nature du curseur en main qui pointe*/
+	height: 100px;
+	width: 150px;
+	margin: 0px 0 0 -40px;
+	left: 50%;
+	bottom: 35px;
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;/*Animation webkit importée*/
+	-moz-animation:    fade_move_down 2s ease-in-out infinite;
+	animation:         fade_move_down 2s ease-in-out infinite;
+}
