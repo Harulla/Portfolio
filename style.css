@@ -59,6 +59,7 @@ p{
 .container{
     height: 100vh;
     padding-left: 10%;
+    padding-top: 3vh;
 }
 
 .header{
@@ -86,19 +87,32 @@ p{
 
 
 .textzone{
-    background-color: floralwhite;
+    background-color: rgb(89, 149, 156);
     font-size: 0.9rem;
     border-radius: 3em;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 5px 10px 5px 10px;
-    width:35%;
+    padding: 5px 45px 5px 45px;
+    width:auto;
+    max-width: 30%;
     height: auto;
-    border:groove var(--main-color) 2px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-shadow: 20px;
+}
+
+.textzone p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.textzone h2{
+    font-size: 40px ;
+    text-align:center;
+    color: #92ece0;
+    margin: 0;
 }
 
 
@@ -117,7 +131,7 @@ p{
 .section-title {
     margin-top: 5px;
     margin-bottom: 5px;
-    padding:0;
+    padding-bottom:1vh;
     font-size: 3rem;
     text-align: center;
     color: var(--main-color)
@@ -301,9 +315,9 @@ p{
 .carousel-item {
     position: absolute;
     width: 100%;
-    height:80vh;
+    height:75vh;
     padding-top: 5vh;
-    background-color: #BCD2F3;
+    background-color:#b6e4df;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
@@ -400,8 +414,8 @@ p{
 
 button {
     background:transparent;
-    color:var(--main-color);
-    border-color:var(--main-color);
+    color: #92ece0;
+    border-color:#92ece0;
     border-width:3px;
     border-style: solid;
     position:relative;
@@ -457,7 +471,7 @@ button:hover {
 }
 
 
-.pink button:before, .pink button:after  {border-color:var(--main-color)}
-.pink button:hover:before, .pink button:hover:after {border-color:var(--main-color);}
-.pink button:hover {color:#fff;background-color:var(--main-color);border-color:var(--main-color);}
-.pink .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+.green button:before, .green button:after  {border-color:#92ece0}
+.green button:hover:before, .pink button:hover:after {border-color:#92ece0;}
+.green button:hover {color:rgb(89, 149, 156);background-color:#92ece0;border-color:#92ece0;}
+.green .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
