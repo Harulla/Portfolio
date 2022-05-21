@@ -7,6 +7,9 @@
     scroll-behavior: smooth;
 }
 
+::selection{
+    background-color:  #8ceee7a2;
+}
 @font-face{ 
     font-family: "Nunito";
     src: url(font/static/Nunito-Medium.ttf)
@@ -16,6 +19,8 @@
     font-family: "NunitoRegular";
     src: url(font/static/Nunito-Regular.ttf)
 }
+
+
 
 
 
@@ -84,13 +89,23 @@ h2{
 
 .icon-box img{
     padding: 0 25% 0 25%;
+    transition: transform .4s;
+}
+
+.icon-box img:hover{
+-ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+
 }
 .icon-box h2{
     font-size: 1.5vw;
     text-align:center;
     color: var(--main-color);
     margin: 0;
+    margin-bottom: 5%;
 }
+
 
 .header{
     width:80vh;
@@ -362,6 +377,7 @@ h2{
     width: auto;
     max-width: 50%;
     max-height: 90%;
+    margin-top:3vh
 }
 
 .carousel-control {
@@ -477,6 +493,7 @@ h2{
     width: auto;
     max-width: 50%;
     max-height: 90%;
+    margin-top:3vh
 }
 
 .carousel4-control {
