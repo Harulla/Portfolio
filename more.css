@@ -1,0 +1,27 @@
+:root {
+    background: #E1F8F6;
+    --main-color: #2CBFB4;
+    --text-color:#827676;
+    --pane-padding: 5px 42px;
+    --main-font:  Nunito;
+    scroll-behavior: smooth;
+}
+
+@font-face{ 
+    font-family: "Nunito";
+    src: url(font/static/Nunito-Medium.ttf)
+}
+
+@font-face{ 
+    font-family: "NunitoRegular";
+    src: url(font/static/Nunito-Regular.ttf)
+}
+
+
+
+
+
+body{
+    margin-top: 0;
+    font-family: var(--main-font)
+}
