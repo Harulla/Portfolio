@@ -1,7 +1,8 @@
 :root {
     background: #E1F8F6;
     --main-color: #2CBFB4;
-    --text-color:#827676;
+    --secondary-color: #E1F8F6;
+    --text-color:white;
     --pane-padding: 5px 42px;
     --main-font:  Nunito;
     scroll-behavior: smooth;
@@ -25,3 +26,100 @@ body{
     margin-top: 0;
     font-family: var(--main-font)
 }
+
+
+.header{
+    width:40vw;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    position:relative;
+    margin: 0 auto;
+    font-family: NunitoRegular;
+    font-size:2.5vw;
+    margin-bottom:2vh;
+    z-index:1000;
+}
+
+.header a{
+    text-decoration: none;
+    color: white
+}
+
+.header a:hover{
+    text-decoration: underline;
+    color: white
+}
+
+
+.central{
+    margin-top: 10vh;
+    padding-top: 2vh;
+    width: 80vw;
+    margin-left: 9vw;
+    height: auto;
+    background-color: var(--main-color);
+    padding-bottom: 10vh;
+}
+
+.container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.image-flex{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.image-flex img{
+    padding-bottom: 2vh;
+    width:29vw;
+    height: 35vh;
+}
+
+figure{
+    text-align: center;
+    color: var(--text-color);
+    font-size:1vw;
+}
+
+h1{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 4vw;
+
+}
+
+h2{
+    color:#79d7ff;
+    font-size: 2.5vw;
+}
+
+.sous-titre{
+    color:#79d7ff;
+    font-size: 2vw;
+}
+
+p{
+    color: var(--text-color);
+    font-size:1.3vw;
+    font-family: NunitoRegular;
+}
+
+a{ 
+    text-decoration: none; 
+    color:#9dd4eb;
+    font-weight: bold;
+}
+
+a:hover{ 
+    color: rgb(229, 198, 255);
+}
+
+
+
+
