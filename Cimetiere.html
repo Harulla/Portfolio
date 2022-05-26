@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="more.css">
+    <title>Cimetière</title>
+</head>
+<body>
+    <div class = "header">
+        <div class = "headerElem"><a href="index.html">Home</a></div>
+        <div class = "headerElem"><a href="#">Work</a></div>
+        <div class = "headerElem"><a href="#">About</a></div>
+        <div class = "headerElem"><a href="#">Contact</a></div>
+    </div>
+
+    <div class = "central">
+        <h1>♦Cimetière♦</h1>
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspDans le cadre de la SAE-04: Gérer des données de l’information , nous avons en binôme <a href="https://perso-etudiant.u-pem.fr/~lucas.leveque/Portfolio/">(avec Lucas Leveque)</a> conçu et développé une base de données permettant à une municipalité de gérer son cimetière. 
+                
+            </p>
+            <p>Le but est de créer et concevoir cette base de données de A à Z jusqu'à obtenir une interface web utilisable.</p>
+            <p>Voici ci-dessous les différentes étapes de notre projet qui se répartissent en trois phases.</p>
+
+            <h2>♦Phase 1♦</h2>
+            <p>Tout d'abord, nous avons examiné le sujet pour ensuite conceptualiser une base de données adaptée et la mettre en place.</p>
+            <div class="image-flex">
+                <figure>
+                    <img src="pictures/mcd.png">
+                    <figcaption>Modèle Conceptuel de Données</figcaption>
+                </figure>
+                <figure>
+                    <img src="pictures/mld.png">
+                    <figcaption>Modèle Logique des Données</figcaption>
+                </figure>
+                <figure>
+                    <img src="pictures/phpmyadmin.png">
+                    <figcaption>Remplissage des tables</figcaption>
+                </figure>
+            </div>
+           
+            <div class="sous-titre">MCD & MLD</div>
+            <p>Dans un premier temps, après la réflexion autour du sujet, nous avons créer un MCD sous le logiciel Looping avec les tables et leurs champs associés en plus de leurs associations. Cela nous a permit d'obtenir le MLD qui nous sera utilise à la cration de nos tables SQL.
+            </p>
+            <div class="sous-titre">Remplissage des tables</div>
+            <p>Par la suite nous avons créer nos tables sous le logiciel phpMyAdmin avec leurs champs, clé primaire et étrangère associés. Ensuite nous avons créer un jeu d'essai (fait au préalable dans un tableau excel) et avons remplis les tables.</p>
+            
+            
+            
+            <br>
+            <h2>♦Phase 2♦</h2>
+
+            <p>Pour cette phase deux, il a été demandé de transférer la base de données du SGBD mySQL et de la mettre en postgreSQL sur quoi nous allons travailler par la suite. Ainsi, nous avons fait un algorithme python permettant de passer du SQL de mySQL à celui de postgreSQL. 
+            </p>
+            <div class="image-flex">
+                <figure>
+                    <img src="pictures/bddphase2.png">
+                    <figcaption>Extrait du code python</figcaption>
+                </figure>    
+            </div>
+
+            <div class="sous-titre">Principe</div>
+            <p>La syntaxe du SQL sur mySQL et sur postgreSQL n'est pas la même. Pour la suite de notre projet nous devions travailler sur postgreSQL, par conséquent il fallait faire un algorithme permettant de corriger ces petit problème de syntaxe qui diffère. 
+            </p>
+            
+            <br>
+            <h2>♦Phase 3♦</h2>
+            <p>Cette dernière phase consiste à d'abord conceptualiser un site web qui pourrait exploiter cette base de données puis de réellement l'exploiter en implémentant le site web avec du php.</p>
+            <div class="image-flex">
+                <figure>
+                    <img src="pictures/acceuilcim.png">
+                    <figcaption>Page d'acceuil publique</figcaption>
+                </figure>
+                <figure>
+                    <img src="pictures/estimation.png">
+                    <figcaption>Modèle Logique des Données</figcaption>
+                </figure>
+                <figure>
+                    <img src="pictures/inscriptionbdd.png">
+                    <figcaption>Remplissage des tables</figcaption>
+                </figure>
+            </div>
+            <br>
+            <h2 style="text-align: center">Qu'est-ce que ce projet m'a apportée ?</h2>
+            <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ce projet est très important afin de comprendre les enjeux de l'expérience et l'interface utilisateur. Cela permet de comprendre que développer une application ne se limite pas à simplément coder mais aussi à privilégier la conception et la rélfexion derrière celle-ci. Pour m'a part ce projet est l'un de mes favoris étant très intéressée par l'ux/ui design, aussi j'ai beaucoup appris sur les méthodes du design thinking. 
+                Enfin, j'ai appris à utiliser l'outil de mockup figma que j'utilise maintenant pour maquetter la plupart de mes projets.
+            </p>
+
+            </p> 
+        </div>
+    </div>
+      
+</body>
+</html>

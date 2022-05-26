@@ -78,7 +78,7 @@ body{
 .image-flex img{
     padding-bottom: 2vh;
     width:29vw;
-    height: 35vh;
+    height: auto;
 }
 
 figure{
