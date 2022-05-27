@@ -1,0 +1,133 @@
+:root {
+    background: #E1F8F6;
+    --main-color: #2CBFB4;
+    --secondary-color: #E1F8F6;
+    --text-color:#827676;
+    --pane-padding: 5px 42px;
+    --main-font:  Nunito;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color:  #8ceee7a2;
+}
+
+@font-face{ 
+    font-family: "Nunito";
+    src: url(font/static/Nunito-Medium.ttf)
+}
+
+@font-face{ 
+    font-family: "NunitoRegular";
+    src: url(font/static/Nunito-Regular.ttf)
+}
+
+
+
+
+
+body{
+    margin-top: 0;
+    font-family: var(--main-font)
+}
+
+h1{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 4vw;
+    margin-top:30vh;
+    margin-bottom:10vh
+
+}
+p{
+    color: var(--text-color);
+    font-size:2vw;
+    font-family: Nunito;
+}
+
+a{ 
+    text-decoration: none; 
+    color:#9dd4eb;
+    font-weight: bold;
+}
+
+a:hover{ 
+    color: rgb(229, 198, 255);
+}
+
+
+.header{
+    width:40vw;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    position:relative;
+    margin: 0 auto;
+    font-family: NunitoRegular;
+    font-size:2.5vw;
+    margin-bottom:2vh;
+    z-index:1000;
+}
+
+.header a{
+    text-decoration: none;
+    color: white
+}
+
+.header a:hover{
+    text-decoration: underline;
+    color: white
+}
+
+.first-container{
+    margin-top: 15vh;
+    margin-left: 8vw;
+    width:80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    justify-content: space-evenly ;
+    margin-bottom: 10vh;
+  
+}
+
+.icon-container{
+    display: flex;
+    height:auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 10% 2% 10%;
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+
+}
+
+.icon-box img{
+    padding: 0 25% 0 25%;
+    transition: transform .4s;
+}
+
+.icon-box img:hover{
+-ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+
+}
+.icon-box h2{
+    font-size: 1.5vw;
+    padding-top: 5%;
+    text-align:center;
+    color: var(--main-color);
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+
+
