@@ -41,6 +41,17 @@ h2{
     margin: 0 0 0 0;
 }
 
+
+a{ 
+    text-decoration: none; 
+    color:#9dd4eb;
+    font-weight: bold;
+}
+
+a:hover{ 
+    color: rgb(229, 198, 255);
+}
+
 .home-container{
     width:100%;
     height: auto;
@@ -568,6 +579,129 @@ h2{
 #carousel4-3:checked ~ .control-3 ~ .carousel4-indicators li:nth-child(3) .carousel4-bullet {
     color: #428bca;
 }
+
+
+
+.carousel6 {
+    margin-right: 2rem;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel6-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel6-open:checked + .carousel6-item {
+    position: relative;
+    opacity: 100;
+}
+
+.carousel6-item {
+    position: absolute;
+    width: 100%;
+    height:40vw;
+    background-color:#b6e4df;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    
+}
+
+.carousel6-item img {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    max-height: 90%;
+    margin-top:3vh
+}
+
+.carousel6-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel6-control.prev {
+    left: 2%;
+}
+
+.carousel6-control.next {
+    right: 2%;
+}
+
+.carousel6-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel6-1:checked ~ .control-1,
+#carousel6-2:checked ~ .control-2,
+#carousel6-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel6-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel6-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel6-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel6-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel6-1:checked ~ .control-1 ~ .carousel6-indicators li:nth-child(1) .carousel6-bullet,
+#carousel6-2:checked ~ .control-2 ~ .carousel6-indicators li:nth-child(2) .carousel6-bullet,
+#carousel6-3:checked ~ .control-3 ~ .carousel6-indicators li:nth-child(3) .carousel6-bullet {
+    color: #428bca;
+}
+
+
+
+
+
+
 
 
 
